@@ -4,13 +4,13 @@ import flatspec._
 import matchers._
 import org.apache.spark.sql.SparkSession
 
-//@Ignore
+@Ignore
 class StartSparkTest extends AnyFlatSpec with should.Matchers with WithSpark {
 
-  "Spark" should "start context" in {
-    val s = spark
+    "Spark" should "start context" in {
+        val s = spark
 
-    Thread.sleep(60000)
-  }
+        Thread.sleep(60000)
+    }
 
 }
